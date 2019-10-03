@@ -1,4 +1,11 @@
-﻿using System;
+﻿/*
+ * Author: Jeffrey Jordan
+ * Date: 10/3/2019
+ * File: MainWindow.xaml.cs
+ * Description: The primary file holding the project's code and framework. 
+ */
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -24,37 +31,42 @@ namespace Paint
     {       
         public MainWindow()
         {
-            InitializeComponent();
+            InitializeComponent();  // begins the thread
         }
 
         private void Clear_Click(object sender, RoutedEventArgs e)
         {
-            Inkcanvas.Strokes.Clear();
+            /* Description:
+             * Framework generated method for recognizing button clicks.
+             */
+
+            Inkcanvas.Strokes.Clear(); // clears the canvas
+        
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e) // button click method
         {
 
-            Inkcanvas.DefaultDrawingAttributes.Color = Color.FromRgb(200, 54, 150);
+            Inkcanvas.DefaultDrawingAttributes.Color = Color.FromRgb(200, 54, 150); // changes the color of the pen
            
         }
 
-        private void Color_Click(object sender, RoutedEventArgs e)
+        private void Color_Click(object sender, RoutedEventArgs e) // left this method so it wouldn't disrupt the build
         {
 
             Inkcanvas.DefaultDrawingAttributes.Color = Color.FromRgb(200, 54, 150);
 
         }
 
-        private void Size_Click(object sender, RoutedEventArgs e)
+        private void Size_Click(object sender, RoutedEventArgs e) // button click method
         {
-            Inkcanvas.DefaultDrawingAttributes.Width = 5;
+            Inkcanvas.DefaultDrawingAttributes.Width = 5; // changes size of the pen
         }
 
-        private void Reset_Click(object sender, RoutedEventArgs e)
+        private void Reset_Click(object sender, RoutedEventArgs e) // button click method
         {
-            Inkcanvas.DefaultDrawingAttributes.Color = Color.FromRgb(0, 0, 0);
-            Inkcanvas.DefaultDrawingAttributes.Width = 2;
+            Inkcanvas.DefaultDrawingAttributes.Color = Color.FromRgb(0, 0, 0); // changes back to black
+            Inkcanvas.DefaultDrawingAttributes.Width = 2; // resets size to default
         }
     }
     

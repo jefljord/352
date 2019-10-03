@@ -1,4 +1,11 @@
-﻿using System;
+﻿/*
+ * Author: Jeffrey Jordan
+ * Date: 10/3/2019
+ * File: HelloFromMain.cs
+ * Description: The file storing the static main method. 
+ */
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
