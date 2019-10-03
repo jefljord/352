@@ -1,10 +1,9 @@
 ﻿/*
  * Author: Jeffrey Jordan
- * Date: 10/3/19
+ * Date: 10/3/2019
  * File: App.xaml.cs
- * Description: The file where logic ineraction takes place.
+ * Description: This file is for the logic that interacts upon the program. 
  */
-
 
 using System;
 using System.Collections.Generic;
