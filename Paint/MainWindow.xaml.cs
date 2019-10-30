@@ -68,6 +68,18 @@ namespace Paint
             Inkcanvas.DefaultDrawingAttributes.Color = Color.FromRgb(0, 0, 0); // changes back to black
             Inkcanvas.DefaultDrawingAttributes.Width = 2; // resets size to default
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e) // this will change the shade of the color
+        {
+            absFact g = new randShade();
+            int gg = g.shader(); // called 3 times for the rgb values
+            int gb = g.shader();
+            int gr = g.shader();
+            byte ggg = Convert.ToByte(gg); // convert from int to bytes
+            byte gbb = Convert.ToByte(gb);
+            byte grr = Convert.ToByte(gr);
+            Inkcanvas.DefaultDrawingAttributes.Color = Color.FromRgb(grr, ggg, gbb);
+        }
     }
     
 }
