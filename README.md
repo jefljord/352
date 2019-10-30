@@ -10,3 +10,6 @@ Instructions: Run the program, click and drag to draw.
 
 Required software: Visual Studio.
 (Recommended: VS 2019)
+
+
+For the shader, click multiple times to see a difference. It is random generated numbers, but they tend to be similar.
