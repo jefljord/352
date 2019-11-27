@@ -60,6 +60,11 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="blueShade.cs" />
+    <Compile Include="ChangeSize.cs" />
+    <Compile Include="colorButton.cs" />
+    <Compile Include="DecorateButton.cs" />
+    <Compile Include="implementColor.cs" />
+    <Compile Include="implementSize.cs" />
     <Compile Include="randShade.cs" />
     <Compile Include="redShade.cs" />
     <Page Include="MainWindow.xaml">

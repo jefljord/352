@@ -33,15 +33,18 @@ namespace Paint
         {
             InitializeComponent();  // begins the thread
         }
-
+        
         private void Clear_Click(object sender, RoutedEventArgs e)
         {
             /* Description:
              * Framework generated method for recognizing button clicks.
              */
-
+            implementSize g = new implementSize();
             Inkcanvas.Strokes.Clear(); // clears the canvas
-        
+            
+            int x = g.getsize(); // uses decorator pattern to act on an object without changing it
+            Clear.Width = x;
+
         }
 
         private void Button_Click(object sender, RoutedEventArgs e) // button click method
