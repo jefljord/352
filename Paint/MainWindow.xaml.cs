@@ -75,10 +75,38 @@ namespace Paint
             int gg = g.shader(); // called 3 times for the rgb values
             int gb = g.shader();
             int gr = g.shader();
+            
             byte ggg = Convert.ToByte(gg); // convert from int to bytes
             byte gbb = Convert.ToByte(gb);
             byte grr = Convert.ToByte(gr);
-            Inkcanvas.DefaultDrawingAttributes.Color = Color.FromRgb(grr, ggg, gbb);
+            Inkcanvas.DefaultDrawingAttributes.Color = Color.FromRgb(grr, ggg, 20);
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            redShade g = new redShade();
+            int gg = g.shader(); // called 3 times for the rgb values
+            int gb = g.shader();
+            int gr = g.shader();
+
+            byte ggg = Convert.ToByte(gg); // convert from int to bytes
+            byte gbb = Convert.ToByte(gb);
+            byte grr = Convert.ToByte(gr);
+            Inkcanvas.DefaultDrawingAttributes.Color = Color.FromRgb(255, gbb, grr);
+
+        }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            blueShade g = new blueShade();
+            int gg = g.shader(); // called 3 times for the rgb values
+            int gb = g.shader();
+            int gr = g.shader();
+
+            byte ggg = Convert.ToByte(gg); // convert from int to bytes
+            byte gbb = Convert.ToByte(gb);
+            byte grr = Convert.ToByte(gr);
+            Inkcanvas.DefaultDrawingAttributes.Color = Color.FromRgb(ggg, gbb, 255);
         }
     }
     
